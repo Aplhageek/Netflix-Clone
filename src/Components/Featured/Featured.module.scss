@@ -1,0 +1,83 @@
+.featured_Container{
+    height: 90vh;
+    position: relative;
+
+    .category{
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        font-size: 30px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color : var(--color-white);  
+
+        select{
+            cursor: pointer;
+            background-color: var(--main-color);
+            border: 1px solid var(--color-white);
+            padding: 5px 10px;
+            color: var(--color-white);
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info_Card{
+        width: 35%;
+        position: absolute;
+        left: 50px;
+        bottom: 100px;
+        color: var(_--color-white);
+        display: flex;
+        flex-direction: column;
+
+        img{
+            width: 400px;
+
+        }
+
+        .description{
+            margin: 20px 0;
+        }
+
+        .card_buttons{
+            display: flex;
+            gap: 10px;
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                
+                &.play_button{
+                    background-color: var(--color-white);
+                    color: var(--main-color);
+                }
+
+                &.info_button{
+                    background-color: var(--grey-color);
+                    color: var(--color-white);
+                }
+
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+
+
+
+    }
+}
+
