@@ -12,7 +12,6 @@ const Watch = () => {
             </div>
             <video src={movie} autoPlay controls className={styles.video}  />
         </div>
-
     )
 }
 
